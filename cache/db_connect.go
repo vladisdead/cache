@@ -14,7 +14,7 @@ var log *zerolog.Logger
 func InitDB() {
 	log = server.NewLogger()
 	var err error
-	connstring := "user=test password=qwe host=192.168.20.177 port=5432 database=cache sslmode=disable"
+	connstring := "user=test password=qwe host= port=5432 database=cache sslmode=disable"
 
 	db, err = sql.Open("postgres", connstring)
 	if err != nil {
